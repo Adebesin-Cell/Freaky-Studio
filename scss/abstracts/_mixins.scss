@@ -1,1 +1,20 @@
 
+@mixin root {
+
+      :root{
+            --yellow:#FACF5A;
+            --color-yellow:#91640F;
+            --red: #ff5959;
+            --black: #232222;
+            --dark-grayish-blue:#233142;
+            --light-grayish-blue: #5E6271;
+            --black-2: #212529;
+            --light-blue: #CDD8E5;
+            --deep-blue: rgba(16, 29, 41, 0.580392);
+            --blue: #4f9da6;
+            --white: #fff;
+            --bg-1: #1f1712;
+
+      }
+
+}

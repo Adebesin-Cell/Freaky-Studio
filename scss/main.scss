@@ -1,4 +1,4 @@
-@import "abstracts/fuctions";
+//
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
@@ -9,12 +9,14 @@
 @import "base/utilities";
 
 @import "components/button";
+@import "components/image";
 
 
-@import "layout/footer";
-@import "layout/grid";
-@import "layout/header";
-@import "layout/navigation";
+@import "layouts/about";
+@import "layouts/footer";
+@import "layouts/grid";
+@import "layouts/header";
+@import "layouts/navigation";
 
 @import "pages/home";
 @import "pages/about";

@@ -1,1 +1,29 @@
 
+@keyframes wheel {
+      0% {
+            transform: translateY(0);
+      }
+      50% {
+            transform: translateY(10px);
+            opacity: 0.5;
+      }
+
+      100% {
+            transform: translateY(20px);
+            opacity: 0;
+      }
+}
+
+@keyframes mobile {
+      0% {
+            transform: translateY(0);
+      }
+      50% {
+            transform: translateY(10px);
+
+      }
+
+      100% {
+            transform: translateY(20px);
+      }
+}

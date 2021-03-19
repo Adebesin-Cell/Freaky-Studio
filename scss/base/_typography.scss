@@ -1,1 +1,43 @@
+.header__text {
+      text-align: center;
 
+      font-size: 2rem;
+      font-weight: 500;
+
+     span {
+      // letter-spacing: .5rem;
+     }
+}
+
+.heading-primary {
+      font-size: 8rem;
+      font-weight: 700;
+
+      width: 100%;
+
+      letter-spacing: .01rem;
+
+      &--center {
+            text-align: center;
+      }
+}
+
+.heading-secondary {
+
+      font-size: 3.5rem;
+      font-weight: 600;
+
+      &--sub {
+            text-align: center;
+      }
+
+}
+
+.paragraph {
+      color: var( --light-grayish-blue);
+      font-size: 1.6rem;
+
+      // width: 85%;
+      padding-right: 4rem;
+      line-height: 2.6rem;
+}

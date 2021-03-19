@@ -6,34 +6,118 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="This is Freaky a personal category website template from w3Layout">
       <title>Freaky</title>
-      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      
       <link rel = "stylesheet" href="css/all.css">
       <link rel="stylesheet" href="assets/css/aos.css">
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <link rel="stylesheet" href="assets/css/owl.carousel.css">
       <link rel="stylesheet" href="assets/css/owl.theme.default.css">
       <link rel="stylesheet" href="css/style.css">
+      <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
       <div class="container-fluid">
             <header class="header row">
-                  <div class="col-md-12 header__main">
-                        <div class="header__logo-box">
-                              <a href="#" class="header__logo">
-                                    Freaky
-                                    <span class="header__dot">
-                                          .
+                  <div class="header__layer">
+                        <div class="col-md-12 header__main">
+                              <div class="header__logo-box">
+                                    <a href="#" class="header__logo">
+                                          Freaky
+                                          <span class="header__dot">
+                                                <i class ="fas fa-circle"></i>
+                                          </span>
+                                    </a>
+                              </div>
+                              <ul class="header__navigation">
+                                    <li class="header__list active">
+                                          <a href="#" class="header__link">Home</a>
+                                    </li>
+                                    <li class="header__list">
+                                          <a href="#" class="header__link">About</a>
+                                    </li>
+                                    <li class="header__list">
+                                          <a href="#" class="header__link">Services</a>
+                                    </li>
+                                    <li class="header__list">
+                                          <a href="#" class="header__link">Contact</a>
+                                    </li>
+                              </ul>
+                        </div>
+
+                        <div class="header__title col-md-12">
+                              <h4 class="header__text">
+                                    Hello
+                                    <span>
+                                          !!!
                                     </span>
+                              </h4>
+                              <h1 class="heading-primary heading-primary--center">
+                                    I'm Honey Smith
+                              </h1>
+
+                              <div class="header__dynamic">
+                                    <h2 class="heading-secondary heading-secondary--sub">
+                                          I'm a Passionate
+                                          <span class="typed">
+
+                                          </span>
+                                    </h2>
+                              </div>
+
+                              <a href="#About" class="scroll">
+                                    <div class="mouse">
+                                          <div class="wheel"></div>
+                                    </div>
+                                    <div class="arrow">
+                                          <i class="fas fa-angle-double-down"></i>
+                                    </div>
                               </a>
                         </div>
-                  </div>
+                  </div>     
             </header>
+            <section id="About" class="section-about">
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-md-6">
+                                    <div class="about__image-box">
+                                          <img src="images/ab.jpg" alt="A girl with the pose" class="about__image">
+                                    </div>
+                              </div>
+                              <div class="col-md-6">
+                                    <div class="about__text">
+                                          <h2 class="heading-secondary heading-secondary--about">
+                                                About Me
+                                                <span class="header__dot">
+                                                      <i class ="fas fa-circle"></i>
+                                                </span>
+                                          </h2>
+                                          <p class="paragraph">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
       </div>
       
-
+      <script src="assets/Js/typed.js"></script>
       <script src="assets/Js/aos.js"></script>
       <script src="assets/Js/bootstrap.js"></script>
       <script src="assets/Js/owl.carousel.js"></script>
       <script src="Js/App.js"></script>
+
+      <script>
+            var typed = new Typed('.typed', {
+                  strings: [
+                        "UI designer.",                      
+                        "Web designer.",
+                        "UX designer."
+                  ],
+                  typeSpeed: 30,
+                  backSpeed: 30,
+                   loop: true
+            });
+      </script>
 </body>
 </html>

@@ -1,1 +1,183 @@
+.header {
+      background-image: url(/images/hero.jpg);
+      height: 100vh;
+      background-size: cover;
+      background-position: top center;
+      background-attachment: fixed;
 
+      &__main {
+            margin-top: 2.1rem;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      &__layer {
+            background-image: url(/images/dots.png);
+            width: 100%;
+            min-height: 90vh;
+            position: relative;
+      }
+
+      &__navigation {
+            display: flex;
+
+            list-style-type: none;
+      }
+
+      &__link {
+            &,
+            &:link,
+            &:visited {
+                  display: inline-block;
+                  text-decoration: none;
+                  font-size: 1.6rem;
+                  width: 100%;
+                  height: 100%;
+
+                  
+                  font-weight: 700;
+                  color: var(--white);
+
+                  text-transform: uppercase;
+
+                  transition: all .5s ease;
+
+                  position: relative;
+                  z-index: 10;
+
+                 
+            }
+
+          
+
+            
+
+            
+      }
+
+      &__list {
+            position: relative;
+            padding: 1rem 2rem;
+            transition: all .2s ease;
+            &.active {
+                  background-color: var(--yellow);
+                  
+                  .header__link {
+                        color: var(--color-yellow);
+                  }
+            }
+
+            &:not(:last-child) {
+                  margin-right: 1rem;
+            }
+        
+          }
+          &__list::before {
+            content: "";
+            position: absolute;
+            top: 0%;
+            left: 0;
+            height: 0;
+            width: 100%;
+            background-color: var(--yellow);
+            transform: scaleY(0);
+            transition: transform .2s,
+                        height .4s .2s cubic-bezier(1,0,0,1),
+                        background-color .1s;
+          }
+        
+          &__list:hover::before,
+          &__list.active::before {
+            transform: scaleY(1);
+            height: 100%;
+          }
+
+          &__list:hover &__link {
+                color: var(--color-yellow);
+          }
+        
+          &__list:active::before {
+            background-color: var(--yellow);
+          }
+        
+
+      &__logo {
+
+            &,
+            &:link,
+            &:visited {
+                  font-size: 3rem;
+                  font-weight: 700;
+                  color: var(--white);
+                  text-decoration: none;
+
+            }
+
+
+      }
+
+      &__dot {
+            font-size: .5rem;
+            color: var(--red);
+      }
+
+
+      &__title {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+      }
+
+}
+
+.typed {
+      color: var(--yellow);
+      font-weight: 2.5rem;
+      font-weight: 400;
+}
+
+
+.scroll {
+      margin: 0 auto;
+      margin-top: 10rem;
+      display: block;
+      width: 5rem;
+      height: 10rem;
+}
+.mouse {
+      margin: 0 auto;
+      border-radius: 12px;
+      width: 3rem;
+      height: 50%;
+      border: 1px solid var(--red);
+      position: relative;
+}
+
+.wheel {
+      width: 1rem;
+      height: 1rem;
+      border-radius: 50%;
+      background-color: var(--red);
+
+      position: absolute;
+      top: 2px;
+      left: 10px;
+
+      animation: wheel 1s ease infinite;
+
+}
+
+.arrow {
+      text-align: center;
+      margin-top: 1rem;
+}
+
+.fas.fa-angle-double-down {
+      font-size: 3rem;
+      color: var(--red);
+
+      animation: mobile 1s ease infinite;
+}
