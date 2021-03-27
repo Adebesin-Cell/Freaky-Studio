@@ -12,6 +12,7 @@
       <link rel="stylesheet" href="assets/css/bootstrap.css">
       <link rel="stylesheet" href="assets/css/owl.carousel.css">
       <link rel="stylesheet" href="assets/css/owl.theme.default.css">
+      <link rel="stylesheet" href="assets/css/lightbox.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -77,7 +78,7 @@
             </header>
             <section id="About" class="section-about">
                   <div class="container">
-                        <div class="row">
+                        <div class="row about">
                               <div class="col-md-6">
                                     <div class="about__image-box">
                                           <img src="images/ab.jpg" alt="A girl with the pose" class="about__image">
@@ -91,20 +92,317 @@
                                                       <i class ="fas fa-circle"></i>
                                                 </span>
                                           </h2>
-                                          <p class="paragraph">
+                                          <p class="paragraph about__paragraph">
                                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur hic odio voluptatem tenetur consequatur adipisicing elit.
                                           </p>
+
+                                          <div class="cta">
+                                                <a href="about.html" class="cta__btn">
+                                                      <span class="icon__box">
+                                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                                      </span>                                                      
+                                                     <span class="cta__text">
+                                                            Read more
+                                                      </span>
+                                                </a>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                        <div class="row about__card-box">
+                              <div class="col-md-4 about__card">
+                                    <div class="card">
+                                          <i class="fas fa-magic card__icon"></i>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">Modern Design </h2>
+                                                <p class = "card__text">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="card">
+                                          <i class="fas fa-umbrella card__icon"></i>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">User Experience </h2>
+                                                <p class = "card__text">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="col-md-4">
+                                    <div class="card">
+                                          <i class="fas fa-edit card__icon"></i>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">Powerful Editor </h2>
+                                                <p class = "card__text">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
                                     </div>
                               </div>
                         </div>
                   </div>
             </section>
+            <section class="row section-progress">
+                  <div class="container u-py-sm">
+                        <div class="row progress__container">
+                              <div class="col-md-5 progress__cta">
+                                    <h1 class="heading-primary heading-primary--progress">
+                                          Motivated By The Desire To
+                                          Achieve
+                                          <span class="header__dot">
+                                                <i class ="fas fa-circle"></i>
+                                          </span>
+                                    </h1>
+                              </div>
+                              <div class="col-md-7 progress__content">
+                                    <div class="progress__info">
+                                          <h3 class="progress__title">
+                                                UI/UX
+                                          </h3>
+                                          <div class="progress" style="height: .7rem;">
+                                                <div class="progress-bar progress-bar--blue" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                    </div>
+                                   
+                                    <div class="progress__info">
+                                          <h3 class="progress__title">
+                                                Ideas
+                                          </h3>
+                                          <div class="progress"  style="height: .7rem;">
+                                                <div class="progress-bar progress-bar--blue" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                    </div>
+                                    <div class="progress__info">
+                                          <h3 class="progress__title">
+                                                Marketing
+                                          </h3>
+                                          <div class="progress"  style="height: .7rem;">
+                                                <div class="progress-bar progress-bar--blue" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+            </section>
+            <section class="section-gallery">
+                  <div class="gallery">
+                        <div class="container u-py-md">
+                              <h2 class="heading-secondary heading-secondary--gallery">
+                                    Stunning Projects
+                                    <span class="header__dot">
+                                          <i class ="fas fa-circle"></i>
+                                    </span>
+                              </h2>
+                              <ul class="nav nav-pills u-my-eq" id="pills-tab" role="tablist">
+                                    <li class="nav-item">
+                                      <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">All</a>
+                                    </li>
+                                    <li class="nav-item navvy">
+                                      <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Photography</a>
+                                    </li>
+                                    <li class="nav-item navvy">
+                                          <a class="nav-link" id="pills-prof-tab" data-toggle="pill" href="#pills-pro" role="tab" aria-controls="pills-pro" aria-selected="false">Web design</a>
+                                        </li>
+                                    <li class="nav-item navvy">
+                                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Creativity</a>
+                                    </li>
+                                  </ul>
+                                  <div class="tab-content" id="pills-tabContent" >
+                                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                                          <div class="row">
+                                                <div class="col-md-6">
+                                                      <a href="images/g1.jpg" data-lightbox="roadtrip">
+                                                            <div class="image-box">
+                                                                  <img src="images/g1.jpg" alt="G1" class="img-fluid gallery__image">
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div> 
+                                                      </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                      <a href="images/g2.jpg" data-lightbox="roadtrip">
+                                                            <div class="image-box">
+                                                                  <img src="images/g2.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <div class="row u-mt-sm">
+                                                <div class="col-md-6">
+                                                      <a href="images/g3.jpg" data-lightbox="roadtrip">
+                                                           <div class="image-box">
+                                                                  <img src="images/g3.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                      <a href="images/g4.jpg" data-lightbox="roadtrip">
+                                                            <div class="image-box">
+                                                                  <img src="images/g4.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                          <!-- <a href="images/image-2.jpg" data-lightbox="roadtrip">Image #2</a> -->
+                                          <!-- <a href="images/image-3.jpg" data-lightbox="roadtrip">Image #3</a> -->
+                                          <!-- <a href="images/image-4.jpg" data-lightbox="roadtrip">Image #4</a> -->
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                                          <div class="row">
+                                                <div class="col-md-6">
+                                                      <a href="images/g1.jpg" data-lightbox="road">
+                                                            <div class="image-box">
+                                                                  <img src="images/g1.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-pro" role="tabpanel" aria-labelledby="pills-pro-tab">
+                                          <div class="row">
+                                                <div class="col-md-6">
+                                                      <a href="images/g2.jpg" data-lightbox="roadt">
+                                                            <div class="image-box">
+                                                                  <img src="images/g2.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                                <div class="col-md-6">
+                                                      <a href="images/g4.jpg" data-lightbox="roadt">
+                                                            <div class="image-box">
+                                                                  <img src="images/g4.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    
+                                    </div>
+                                    <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" >.
+                                          <div class="row">
+                                                <div class="col-md-6">
+                                                      <a href="images/g3.jpg" data-lightbox="roa">
+                                                            <div class="image-box">
+                                                                  <img src="images/g3.jpg" alt="G1" class="img-fluid gallery__image"> 
+                                                                  <div class="image-box__content">
+                                                                        <h2 class="image-box__title">
+                                                                              Add your Title
+                                                                        </h2>
+                                                                  </div> 
+                                                            </div>  
+                                                      </a>
+                                                </div>
+                                          </div>
+                                    </div>
+                                  </div>
+                            
+                        </div>
+                  </div>
+            </section>
+            <section class="row section-blog">
+                        <div class="container u-py-md-2">
+                              <h2 class="heading-secondary heading-secondary--blog">
+                                    Blogs & News
+                                    <span class="header__dot">
+                                          <i class ="fas fa-circle"></i>
+                                    </span>
+                              </h2>
+                              <div class="row blog u-mt-md">
+                                    <div class="col-md-4 blog__box">
+                                         <img src="images/1.jpg" alt="a blog image" class="img-fluid blog__image">
+                                         <div class="blog__details">
+                                               <div class="blog__info">
+                                                      <h2 class="blog__title">
+                                                            Blog Post title 1
+                                                      </h2>
+                                                      <p class="blog__date">
+                                                            Dec 6th 2020
+                                                      </p>
+                                               </div>                                              
+                                         </div>
+                                    </div>
+                                    <div class="col-md-4 blog__box">
+                                          <img src="images/2.jpg" alt="a blog image" class="img-fluid blog__image">
+                                          <div class="blog__details">
+                                                <div class="blog__info">
+                                                       <h2 class="blog__title">
+                                                             Blog Post title 1
+                                                       </h2>
+                                                       <p class="blog__date">
+                                                             Dec 6th 2020
+                                                       </p>
+                                                </div>                                              
+                                          </div>
+                                     </div>
+                                     <div class="col-md-4 blog__box">
+                                          <img src="images/3.jpg" alt="a blog image" class="img-fluid blog__image">
+                                          <div class="blog__details">
+                                                <div class="blog__info">
+                                                       <h2 class="blog__title">
+                                                             Blog Post title 1
+                                                       </h2>
+                                                       <p class="blog__date">
+                                                             Dec 6th 2020
+                                                       </p>
+                                                </div>                                              
+                                          </div>
+                                     </div>
+                              </div>
+                        </div>
+            </section>
+            <section class="section-stories u-py-lg">
+                   <div class="container u-py-md-2">
+
+                   </div>
+            </section>
+           
       </div>
-      
+      <script src="assets/Js/jquery-3.5.1.js"></script>
       <script src="assets/Js/typed.js"></script>
       <script src="assets/Js/aos.js"></script>
       <script src="assets/Js/bootstrap.js"></script>
       <script src="assets/Js/owl.carousel.js"></script>
+      <script src="assets/Js/lightbox-plus-jquery.js"></script>
+      <script src="assets/Js/lightbox-plus-jquery.min.map"></script>
+      <script src="assets/Js/lightbox.js"></script>
+      <script src="assets/Js/lightbox.min.map"></script>
       <script src="Js/App.js"></script>
 
       <script>
@@ -118,6 +416,24 @@
                   backSpeed: 30,
                    loop: true
             });
+
+            $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:1
+                },
+                1000:{
+                    items:1
+                }
+            }
+        });
       </script>
+    
 </body>
 </html>

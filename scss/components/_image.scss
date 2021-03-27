@@ -2,13 +2,16 @@
       
 
       &__image-box {
-            
+           height: 100%;
       }
 
       &__image {
             display: block;
             width:100%;
             border-radius:14px;
+            height: 100%;
+            object-fit: cover;
 
       }
 }
+

@@ -4,9 +4,6 @@
       font-size: 2rem;
       font-weight: 500;
 
-     span {
-      // letter-spacing: .5rem;
-     }
 }
 
 .heading-primary {
@@ -20,6 +17,18 @@
       &--center {
             text-align: center;
       }
+
+      &--progress {
+            font-size: 3.6rem;
+            line-height: 4.6rem;
+            letter-spacing: inherit;
+            text-align: left;
+
+            text-transform: capitalize;
+            margin-bottom: 2.4rem;
+            width: 80%;
+
+      }
 }
 
 .heading-secondary {
@@ -31,13 +40,44 @@
             text-align: center;
       }
 
+      &--about {
+            font-size: 3.6rem;
+            margin-top: 2rem;
+      }
+
+      &--gallery {
+            font-size: 4rem;
+            color: var(--dark-grayish-blue);
+            line-height: 4.6rem;
+
+            text-transform: capitalize;
+            letter-spacing: .5rem;
+
+            margin-bottom: 2.4rem;
+      }
+
+      &--blog {
+            margin-bottom: 3rem;
+      }
+
 }
 
 .paragraph {
       color: var( --light-grayish-blue);
-      font-size: 1.6rem;
+      font-size: 1.4rem;
 
       // width: 85%;
-      padding-right: 4rem;
+      padding-right:2rem;
       line-height: 2.6rem;
+}
+
+
+.heading__dynamic {
+      margin-top: 2rem;
+}
+
+.progress__title {
+      font-size: 1.4rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
 }

@@ -1,9 +1,74 @@
 .about {
+      padding-bottom:10rem;
 
       &__text {
             padding: 0 3rem;
+            padding-top: 5rem;
+            padding-right: 5rem;
             display: flex;
             justify-content: space-around;
+            justify-items: center;
             flex-direction: column;
+            // padding-top: 2rem;   
+            padding-bottom: 5rem;
       }
+
+      &__paragraph {
+            margin-top: 3rem;
+      }
+
+      &__card-box {
+            padding: 5rem 0;
+      }
+}
+
+.cta {
+      margin-top: 4rem;
+
+      &__btn {
+            &,
+            &:link,
+            &:visited {
+                  display: inline-block;
+                  padding: .5rem 2rem;
+                  text-decoration: none;
+                  font-size: 2rem;
+
+                  display: flex;
+                  align-items: center;
+                  justify-items: flex-start;
+                  transition: all 1s ease;
+            }
+
+           
+           
+      }
+
+      &__text {
+            margin-left: 2.5rem;
+            color: var(--red);
+            transition: all 1s ease;
+            font-size: 1.6rem;
+            font-weight: 700;
+      }
+
+      .fas.fa-long-arrow-alt-right {
+            
+            color: var(--dark-grayish-blue);
+      }
+
+      &__btn:hover &__text{
+            color: var(--blue);
+      }
+
+     
+}
+
+.icon__box {
+      background-color: var( --icon-bg-color);
+      display: block;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      text-align: center;
 }

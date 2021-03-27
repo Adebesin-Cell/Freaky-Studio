@@ -1,6 +1,6 @@
 .header {
       background-image: url(/images/hero.jpg);
-      height: 100vh;
+      height: 105vh;
       background-size: cover;
       background-position: top center;
       background-attachment: fixed;
@@ -126,7 +126,7 @@
 
       &__title {
             position: absolute;
-            top: 60%;
+            top: 65%;
             left: 50%;
             transform: translate(-50%,-50%);
       }

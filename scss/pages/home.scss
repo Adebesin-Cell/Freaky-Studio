@@ -1,7 +1,38 @@
 .section-about {
-      // height: 50vh;
-
-      padding-top: 12rem;
-      padding-bottom: 20rem;
+      padding-top: 15rem;
+      padding-bottom: 5rem;
       color: var(--dark-grayish-blue);
+}
+.progress__container {
+      align-items: center;
+}
+.section-progress {
+      padding: 4rem 0rem;
+      color: var(--dark-grayish-blue);
+      background-color: var(--icon-bg-color);
+}
+
+.progress__info {
+      margin-bottom: 3rem;
+      text-align: left;
+}
+
+.progress-bar--blue {
+     background-color: var(--blue);
+}
+
+.progress {
+      background-color: var(--white);
+}
+
+.section-gallery {
+      width: 100%;
+}
+
+.section-blog {
+      background-color: var(--bg-1);
+      color: var(--white);
+
+      padding-top: 5rem;
+      padding-bottom: 3rem;
 }

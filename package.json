@@ -7,8 +7,12 @@
     "watch": "node-sass -w scss/main.scss css/style.css",
     "server": "live-server",
     "start": "npm-run-all --parallel watch server",
-
-    "build": "npm-run-all concat compile compress"
+    "compile": "node-sass -o css/style.comp.css scss/main.scss",
+    "concat": "concat -o css/style.concat.css assets/css/aos.css assets/css/bootstrap.css assets/css/owl.carousel.css assets/css/owl.theme.default.css css/style.comp.css",
+    
+    "prefix": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css",
+    "compress": "node-sass ",
+    "build": "npm-run-all prefix concat compile compress"
   },
   "repository": {
     "type": "git",
@@ -21,8 +25,11 @@
   },
   "homepage": "https://github.com/Adebesin-Cell/Freaky-Studio#readme",
   "devDependencies": {
+    "autoprefixer": "^10.2.5",
     "concat": "^1.0.3",
     "node-sass": "^5.0.0",
+    "postcss": "^8.2.8",
+    "postcss-cli": "^8.3.1",
     "yarn-run-all": "^3.1.1"
   },
   "dependencies": {

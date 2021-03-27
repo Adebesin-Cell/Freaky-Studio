@@ -1,0 +1,36 @@
+.card {
+      border:none;
+      transition: all .5s ease;
+   
+      &__icon {
+            font-size: 5rem;
+            color: var(--light-blue);
+            transition: all .5s ease;
+      }
+
+      &__details {
+            margin-top: 2.1rem;
+      }
+
+      &__header {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--dark-grayish-blue);
+            margin-bottom: 2.1rem;
+            transition: all .5s ease;
+
+            &:hover {
+                  color: var(--red);
+                  cursor: pointer;
+            }
+      }
+
+      &__text {
+            color: var(--light-grayish-blue);
+            font-size: 1.5rem;
+      }
+
+      &:hover &__icon {
+            color: var(--blue);
+      }
+}
