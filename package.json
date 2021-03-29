@@ -9,7 +9,6 @@
     "start": "npm-run-all --parallel watch server",
     "compile": "node-sass -o css/style.comp.css scss/main.scss",
     "concat": "concat -o css/style.concat.css assets/css/aos.css assets/css/bootstrap.css assets/css/owl.carousel.css assets/css/owl.theme.default.css css/style.comp.css",
-    
     "prefix": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css",
     "compress": "node-sass ",
     "build": "npm-run-all prefix concat compile compress"
@@ -30,6 +29,7 @@
     "node-sass": "^5.0.0",
     "postcss": "^8.2.8",
     "postcss-cli": "^8.3.1",
+    "uglify-js": "^3.13.3",
     "yarn-run-all": "^3.1.1"
   },
   "dependencies": {

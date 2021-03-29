@@ -1,0 +1,51 @@
+.About {
+
+      &--header {
+            background-color: var( --bg-1);
+
+            &__main {
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding-top: 2rem;
+                  padding-bottom: 2rem;
+            }
+      }
+
+      &__navigation {
+            display: flex;
+            list-style-type: none;
+      }
+
+      &__link {
+            &,
+            &:link,
+            &:visited {
+                  padding: 1rem 2rem;
+            }
+      }
+}
+.breaddy {
+      background-color: #e9ecef;
+      // width: 100%;
+      padding: 0 1rem;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+      content: "\00BB";
+}
+
+.breadcrumb-item.active {
+      color: var(--dark-grayish-blue);
+}
+.breadcrumb-item a {
+      color: var(--red);
+}
+
+.section-About_me {
+      padding-top: 5rem;
+      padding-bottom: 3rem;
+}
+.About__image {
+      border-radius: 6px;
+}

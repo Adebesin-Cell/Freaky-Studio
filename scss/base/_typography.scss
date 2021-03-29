@@ -38,6 +38,9 @@
       font-weight: 600;
       &--sub {
             text-align: center;
+            @include respond (phone){
+                  font-size: 3rem;
+            }
             @media only screen and (max-width:400px) {
                   font-size: 2.5rem;
             }
@@ -45,6 +48,12 @@
       &--about {
             font-size: 3.6rem;
             margin-top: 2rem;
+
+            &-page {
+                  color: var(--dark-grayish-blue);
+                  line-height: 4.6rem;
+                  margin-bottom: 3rem;
+            }
       }
       &--gallery {
             font-size: 4rem;

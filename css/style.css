@@ -100,12 +100,19 @@ body {
   font-weight: 600; }
   .heading-secondary--sub {
     text-align: center; }
+    @media only screen and (max-width: 37.5em) {
+      .heading-secondary--sub {
+        font-size: 3rem; } }
     @media only screen and (max-width: 400px) {
       .heading-secondary--sub {
         font-size: 2.5rem; } }
   .heading-secondary--about {
     font-size: 3.6rem;
     margin-top: 2rem; }
+    .heading-secondary--about-page {
+      color: var(--dark-grayish-blue);
+      line-height: 4.6rem;
+      margin-bottom: 3rem; }
   .heading-secondary--gallery {
     font-size: 4rem;
     color: var(--dark-grayish-blue);
@@ -170,6 +177,9 @@ body {
 @media only screen and (max-width: 37.5em) {
   .sm-u-mt-xs {
     margin-top: 3rem; } }
+
+.u-p-sm {
+  padding: 3rem 2rem; }
 
 .card {
   border: none;
@@ -755,6 +765,8 @@ body {
     font-weight: 700;
     color: var(--white);
     text-decoration: none; }
+  .header__logo--lg, .header__logo--lg:link, .header__logo--lg:visited {
+    font-size: 3.5rem; }
   .header__dot {
     font-size: .5rem;
     color: var(--red); }
@@ -884,3 +896,39 @@ body {
   background-attachment: fixed;
   text-align: center;
   background-size: cover; }
+
+.About--header {
+  background-color: var(--bg-1); }
+  .About--header__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem; }
+
+.About__navigation {
+  display: flex;
+  list-style-type: none; }
+
+.About__link, .About__link:link, .About__link:visited {
+  padding: 1rem 2rem; }
+
+.breaddy {
+  background-color: #e9ecef;
+  padding: 0 1rem; }
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: "\00BB"; }
+
+.breadcrumb-item.active {
+  color: var(--dark-grayish-blue); }
+
+.breadcrumb-item a {
+  color: var(--red); }
+
+.section-About_me {
+  padding-top: 5rem;
+  padding-bottom: 3rem; }
+
+.About__image {
+  border-radius: 6px; }

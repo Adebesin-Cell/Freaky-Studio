@@ -148,6 +148,14 @@
 
             }
 
+            &--lg {
+                  &,
+                  &:link,
+                  &:visited{
+                        font-size: 3.5rem;
+                  }
+            }
+
 
       }
 
