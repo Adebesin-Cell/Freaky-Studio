@@ -36,3 +36,38 @@
       padding-top: 5rem;
       padding-bottom: 3rem;
 }
+
+.movetop {
+      &,
+      &:link,
+      &:visited {
+            position: fixed;
+            right: 1.4rem;
+            z-index: 9999;
+            top: 63rem;
+            width: 3rem;
+            height: 3rem;
+            color: var(--white);
+            background-color: var(--dark-grayish-blue);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            text-decoration: none;
+      }
+      
+
+      &:hover {
+            text-decoration: none;
+            color: #fff;
+      }
+}
+
+.section-contact {
+      background-image: url(/images/banner3.jpg);
+      position: relative;
+      background-attachment: fixed;
+      text-align: center;
+      background-size: cover;
+}

@@ -4,6 +4,8 @@
       background-size: cover;
       background-position: top center;
       background-attachment: fixed;
+      position: relative;
+      z-index: 9999999999;
 
       &__main {
             margin-top: 2.1rem;

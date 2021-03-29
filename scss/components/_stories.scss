@@ -1,0 +1,57 @@
+.stories {
+      color: var(--light-grayish-blue);
+
+      align-items: center;
+
+      &__text {
+            width: 80%;
+      }
+
+      &__image {
+            border-radius: 6px;
+      }
+
+      &__header {
+            font-size: 2.4rem;
+            color: var(--dark-grayish-blue);
+            font-weight: 700;
+            line-height: 3.6rem;
+            margin-bottom: 0;
+
+      }
+
+      &__title {
+            font-size: 1.6rem;
+            color: var(--blue);
+            margin-bottom: 3rem;
+      }
+
+      &__paragraph {
+            font-size: 2rem;
+            line-height: 3rem;
+            font-weight: 400;
+           
+      }
+}
+
+.owl-dots {
+      position: absolute !important;
+      top: 80% !important;
+      left: 0% !important;
+}
+.owl-dot span {
+      background-color: var(--dark-grayish-blue) !important;
+}
+.owl-dot:hover span {
+      background-color: var(--yellow) !important;
+}
+
+.owl-dot.active span{
+      background-color: var(--yellow) !important;
+}
+
+.owl-dot.active {
+      border-radius: 6px !important;
+      border: 2px solid var(--dark-grayish-blue) !important;
+}
+

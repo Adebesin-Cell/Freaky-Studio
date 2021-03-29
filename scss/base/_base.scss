@@ -12,6 +12,17 @@ html {
       font-size: 62.5%;
       scroll-behavior: smooth;
       box-sizing: border-box;
+
+      @include respond(tablet_landscape) {
+            font-size: 56.25%;
+      }
+      @include respond (tablet_portrait) {
+            font-size: 50%;
+      }
+
+      @include respond (big_desktop) {
+            font-size: 75%;
+      }
 }
 
 body {
@@ -19,6 +30,7 @@ body {
       font-size: 1.6rem;
       font-weight: 400;
       color: var(--white);
+      overflow-x: hidden;
 
 }
 
