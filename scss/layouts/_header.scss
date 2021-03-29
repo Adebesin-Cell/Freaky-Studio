@@ -13,6 +13,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            flex-wrap: wrap;
       }
 
       &__layer {
@@ -21,11 +22,43 @@
             min-height: 90vh;
             position: relative;
       }
-
       &__navigation {
             display: flex;
 
             list-style-type: none;
+
+                  
+            @include respond (no_desktop) {
+                  flex-basis: 100%;
+                  flex-direction: column;
+                  margin-top: 4rem;
+                  background-color: var(--black);
+                  text-align: center;
+                  opacity: 0;
+                  visibility: hidden;
+                  transition: all .5s ease;
+            }
+
+            &__toggle {
+                  display: none;
+                  
+                  
+                  @include respond (no_desktop) {
+                        display:flex;
+                        align-items: center;
+                        justify-content: center;
+                        justify-items: center;
+                        cursor: pointer;
+                        font-size: 2rem;
+                        background-color: var(--navi-bg-color);
+                        border-radius: 6px;
+                        width: 5rem;
+                        height: 5rem;
+                        text-align: center;
+                        // flex-basis: 50%;
+                      
+                  }
+            }
       }
 
       &__link {
@@ -36,27 +69,17 @@
                   text-decoration: none;
                   font-size: 1.6rem;
                   width: 100%;
-                  height: 100%;
-
-                  
+                  height: 100%;                 
                   font-weight: 700;
                   color: var(--white);
-
                   text-transform: uppercase;
-
                   transition: all .5s ease;
-
                   position: relative;
                   z-index: 10;
-
-                 
-            }
-
-          
-
-            
-
-            
+                  @include respond (small_desktop){
+                        font-size: 1.4rem;
+                  }                
+            }           
       }
 
       &__list {
@@ -102,6 +125,14 @@
         
           &__list:active::before {
             background-color: var(--yellow);
+          }
+
+          &__logo-box {
+
+                @include respond (no_desktop) {
+                  flex-basis: 75%;
+                }
+                
           }
         
 
@@ -182,4 +213,10 @@
       color: var(--red);
 
       animation: mobile 1s ease infinite;
+}
+
+.open {
+      opacity: 1;
+      visibility: visible;
+      // animation: moveDown ;
 }

@@ -5,6 +5,9 @@
 }
 .progress__container {
       align-items: center;
+      @include respond (no_desktop){
+            padding: 0rem 3rem;
+       }
 }
 .section-progress {
       padding: 4rem 0rem;
@@ -23,6 +26,10 @@
 
 .progress {
       background-color: var(--white);
+
+      &__content {
+            margin-top: 2.5rem;
+      }
 }
 
 .section-gallery {
@@ -35,7 +42,15 @@
 
       padding-top: 5rem;
       padding-bottom: 3rem;
+      @include respond (small_desktop){
+           padding-top: 0rem;
+      }
+      @include respond (no_desktop){
+            padding: 0rem 3rem;
+       }
 }
+
+// move the movetop to a component and name it top.scss
 
 .movetop {
       &,
@@ -55,6 +70,15 @@
             align-items: center;
             justify-items: center;
             text-decoration: none;
+            
+            @include respond (no_desktop) {
+                  font-size: 3rem;
+                  width: 4rem;
+                  height: 4rem;
+            }
+            @include respond (phone) {
+                  right: 4rem;
+            }
       }
       
 
@@ -62,6 +86,7 @@
             text-decoration: none;
             color: #fff;
       }
+
 }
 
 .section-contact {

@@ -25,14 +25,18 @@
                   <div class="header__layer">
                         <div class="col-md-12 header__main">
                               <div class="header__logo-box">
-                                    <a href="#" class="header__logo">
+                                    <a href="index.html" class="header__logo">
                                           Freaky
                                           <span class="header__dot">
                                                 <i class ="fas fa-circle"></i>
                                           </span>
                                     </a>
                               </div>
-                              <ul class="header__navigation">
+                              <div class="header__navigation__toggle" id="toggle">
+                                    <span class="fas fa-bars"></span>
+                              </div>
+
+                              <ul class="header__navigation" id="nav">
                                     <li class="header__list active">
                                           <a href="index.html" class="header__link">Home</a>
                                     </li>
@@ -47,6 +51,11 @@
                                     </li>
                               </ul>
                         </div>
+                        <!-- <div class="header__toggled__navigation"> -->
+                                    <!-- <ul class="toggled__navigation"> -->
+                                          <!-- <li class="toggled__item"><a href="index.html" class="toggled__link">Home</a></li> -->
+                                    <!-- </ul> -->
+                        <!-- </div> -->
 
                         <div class="header__title col-md-12">
                               <h4 class="header__text">
@@ -82,12 +91,12 @@
             <section id="About" class="section-about">
                   <div class="container">
                         <div class="row about">
-                              <div class="col-md-6">
+                              <div class="col-md-6 col-md-6--full" >
                                     <div class="about__image-box">
                                           <img src="images/ab.jpg" alt="A girl with the pose" class="about__image">
                                     </div>
                               </div>
-                              <div class="col-md-6">
+                              <div class="col-md-6 col-md-6--full">
                                     <div class="about__text">
                                           <h2 class="heading-secondary heading-secondary--about">
                                                 About Me
@@ -113,7 +122,7 @@
                               </div>
                         </div>
                         <div class="row about__card-box">
-                              <div class="col-md-4 about__card">
+                              <div class="col-md-4 col-md-4--full col-md-4--max about__card">
                                     <div class="card">
                                           <i class="fas fa-magic card__icon"></i>
                                           <div class="card__details">
@@ -124,7 +133,7 @@
                                           </div>
                                     </div>
                               </div>
-                              <div class="col-md-4">
+                              <div class="col-md-4 col-md-4--full col-md-4--max">
                                     <div class="card">
                                           <i class="fas fa-umbrella card__icon"></i>
                                           <div class="card__details">
@@ -135,8 +144,8 @@
                                           </div>
                                     </div>
                               </div>
-                              <div class="col-md-4">
-                                    <div class="card">
+                              <div class="col-md-4 col-md-4--full col-md-4--max">
+                                    <div class="card card--3 u-mt-xs">
                                           <i class="fas fa-edit card__icon"></i>
                                           <div class="card__details">
                                                 <h2 class = "card__header">Powerful Editor </h2>
@@ -150,9 +159,9 @@
                   </div>
             </section>
             <section class="row section-progress">
-                  <div class="container u-py-sm">
+                  <div class="container u-py-sm u-py-none">
                         <div class="row progress__container">
-                              <div class="col-md-5 progress__cta">
+                              <div class="col-md-5 col-md-5--full progress__cta">
                                     <h1 class="heading-primary heading-primary--progress">
                                           Motivated By The Desire To
                                           Achieve
@@ -161,7 +170,7 @@
                                           </span>
                                     </h1>
                               </div>
-                              <div class="col-md-7 progress__content">
+                              <div class="col-md-7 col-md-7--full progress__content">
                                     <div class="progress__info">
                                           <h3 class="progress__title">
                                                 UI/UX
@@ -211,13 +220,13 @@
                                           <a class="nav-link" id="pills-prof-tab" data-toggle="pill" href="#pills-pro" role="tab" aria-controls="pills-pro" aria-selected="false">Web design</a>
                                         </li>
                                     <li class="nav-item navvy">
-                                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Creativity</a>
+                                      <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Creative</a>
                                     </li>
                                   </ul>
                                   <div class="tab-content" id="pills-tabContent" >
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
                                           <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max">
                                                       <a href="images/g1.jpg" data-lightbox="roadtrip">
                                                             <div class="image-box">
                                                                   <img src="images/g1.jpg" alt="G1" class="img-fluid gallery__image">
@@ -229,7 +238,7 @@
                                                             </div> 
                                                       </a>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max sm-u-mt-xs">
                                                       <a href="images/g2.jpg" data-lightbox="roadtrip">
                                                             <div class="image-box">
                                                                   <img src="images/g2.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -243,7 +252,7 @@
                                                 </div>
                                           </div>
                                           <div class="row u-mt-sm">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max ">
                                                       <a href="images/g3.jpg" data-lightbox="roadtrip">
                                                            <div class="image-box">
                                                                   <img src="images/g3.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -255,7 +264,7 @@
                                                             </div>
                                                       </a>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max sm-u-mt-xs">
                                                       <a href="images/g4.jpg" data-lightbox="roadtrip">
                                                             <div class="image-box">
                                                                   <img src="images/g4.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -268,13 +277,10 @@
                                                       </a>
                                                 </div>
                                           </div>
-                                          <!-- <a href="images/image-2.jpg" data-lightbox="roadtrip">Image #2</a> -->
-                                          <!-- <a href="images/image-3.jpg" data-lightbox="roadtrip">Image #3</a> -->
-                                          <!-- <a href="images/image-4.jpg" data-lightbox="roadtrip">Image #4</a> -->
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
                                           <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max">
                                                       <a href="images/g1.jpg" data-lightbox="road">
                                                             <div class="image-box">
                                                                   <img src="images/g1.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -286,12 +292,11 @@
                                                             </div>
                                                       </a>
                                                 </div>
-                                          </div>
-                                    
+                                          </div>                                    
                                     </div>
                                     <div class="tab-pane fade" id="pills-pro" role="tabpanel" aria-labelledby="pills-pro-tab">
                                           <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max">
                                                       <a href="images/g2.jpg" data-lightbox="roadt">
                                                             <div class="image-box">
                                                                   <img src="images/g2.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -303,7 +308,7 @@
                                                             </div>
                                                       </a>
                                                 </div>
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max  sm-u-mt-xs">
                                                       <a href="images/g4.jpg" data-lightbox="roadt">
                                                             <div class="image-box">
                                                                   <img src="images/g4.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -320,7 +325,7 @@
                                     </div>
                                     <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" >.
                                           <div class="row">
-                                                <div class="col-md-6">
+                                                <div class="col-md-6 col-md-6--half col-md-6--max">
                                                       <a href="images/g3.jpg" data-lightbox="roa">
                                                             <div class="image-box">
                                                                   <img src="images/g3.jpg" alt="G1" class="img-fluid gallery__image"> 
@@ -340,7 +345,7 @@
                   </div>
             </section>
             <section class="row section-blog">
-                        <div class="container u-py-md-2">
+                        <div class="container u-py-md-2 u-py-none">
                               <h2 class="heading-secondary heading-secondary--blog">
                                     Blogs & News
                                     <span class="header__dot">
@@ -348,7 +353,7 @@
                                     </span>
                               </h2>
                               <div class="row blog u-mt-md">
-                                    <div class="col-md-4 blog__box">
+                                    <div class="col-md-4 col-md-4--full blog__box col-md-4--max">
                                          <img src="images/1.jpg" alt="a blog image" class="img-fluid blog__image">
                                          <div class="blog__details">
                                                <div class="blog__info">
@@ -361,7 +366,7 @@
                                                </div>                                              
                                          </div>
                                     </div>
-                                    <div class="col-md-4 blog__box">
+                                    <div class="col-md-4 col-md-4--full blog__box blog__box--2 col-md-4--max">
                                           <img src="images/2.jpg" alt="a blog image" class="img-fluid blog__image">
                                           <div class="blog__details">
                                                 <div class="blog__info">
@@ -374,7 +379,7 @@
                                                 </div>                                              
                                           </div>
                                      </div>
-                                     <div class="col-md-4 blog__box">
+                                     <div class="col-md-4 col-md-4--full blog__box blog__box--3 col-md-4--max">
                                           <img src="images/3.jpg" alt="a blog image" class="img-fluid blog__image">
                                           <div class="blog__details">
                                                 <div class="blog__info">
@@ -491,7 +496,7 @@
 
             <footer class="footer container">
                   <div class="row footer__content">
-                        <div class="col-md-6 footer__texts">
+                        <div class="col-md-6 col-md-6--full footer__texts">
                              <p class="footer__paragraph">
                                    &copy; 2021 Freaky. Made with 
                                    <span>
@@ -505,7 +510,7 @@
                                     </span>
                              </p>
                         </div>
-                        <div class="col-md-6 footer__cta-box">
+                        <div class="col-md-6  col-md-6--full footer__cta-box">
                               <div class="footer__cta">
                                     <ul class="footer__navigation">
                                           <li class="footer__item">
@@ -573,9 +578,9 @@
       <script>
            $('.owl-carousel').owlCarousel({
             loop:true,
-            margin:10,
+            margin:20,
             nav:true,
-            autoplay:true,
+            autoplay:false,
             autoplayTimeout:2000,
             autoplayHoverPause:true,
             responsive:{

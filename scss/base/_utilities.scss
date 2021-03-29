@@ -3,6 +3,10 @@
       padding: 2rem 0rem;
 }
 
+.u-py-none {
+      padding: 0rem;
+}
+
 .u-py-md {
       padding-top: 5rem;
 }
@@ -23,4 +27,17 @@
 
 .u-py-lg {
       padding: 4.5rem 0;
+}
+
+.u-mt-xs {
+
+      @include respond (small_desktop) {
+            margin-top: 3rem;
+      }
+}
+
+.sm-u-mt-xs {
+      @include respond(phone) {
+            margin-top: 3rem;
+      }
 }

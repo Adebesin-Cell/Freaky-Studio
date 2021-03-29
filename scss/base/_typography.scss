@@ -1,74 +1,75 @@
 .header__text {
       text-align: center;
-
       font-size: 2rem;
       font-weight: 500;
-
 }
 
 .heading-primary {
       font-size: 8rem;
       font-weight: 700;
-
       width: 100%;
-
       letter-spacing: .01rem;
-
+      @include respond (no_desktop){
+            font-size: 7rem;
+      }
+      @include respond (phone){
+            font-size: 6rem;
+      }
+      @media only screen and (max-width:400px) {
+            font-size: 5rem;
+      }
       &--center {
             text-align: center;
       }
-
       &--progress {
             font-size: 3.6rem;
             line-height: 4.6rem;
             letter-spacing: inherit;
             text-align: left;
-
             text-transform: capitalize;
             margin-bottom: 2.4rem;
             width: 80%;
-
       }
+   
 }
 
 .heading-secondary {
-
       font-size: 3.5rem;
       font-weight: 600;
-
       &--sub {
             text-align: center;
+            @media only screen and (max-width:400px) {
+                  font-size: 2.5rem;
+            }
       }
-
       &--about {
             font-size: 3.6rem;
             margin-top: 2rem;
       }
-
       &--gallery {
             font-size: 4rem;
             color: var(--dark-grayish-blue);
             line-height: 4.6rem;
-
             text-transform: capitalize;
             letter-spacing: .5rem;
-
             margin-bottom: 2.4rem;
+            @include respond (small_desktop) {
+                  letter-spacing: initial;
+            }
       }
-
       &--blog {
             margin-bottom: 3rem;
       }
-
 }
 
 .paragraph {
       color: var( --light-grayish-blue);
       font-size: 1.4rem;
-
-      // width: 85%;
       padding-right:2rem;
       line-height: 2.6rem;
+      @include respond (phone){
+           padding-right: 0rem;
+      }
 }
 
 
@@ -80,4 +81,7 @@
       font-size: 1.4rem;
       font-weight: 700;
       margin-bottom: 1rem;
+      @include respond (small_desktop) {
+            font-size: 1.8rem;
+      }
 }

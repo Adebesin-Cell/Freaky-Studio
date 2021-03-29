@@ -1,7 +1,15 @@
 .card {
       border:none;
       transition: all .5s ease;
-   
+      @include respond(no_desktop) {
+            margin-bottom: 4rem;
+      }
+      &--3 {
+            @include respond(no_desktop) {
+                  margin-bottom: 0rem;
+            } 
+      }
+      
       &__icon {
             font-size: 5rem;
             color: var(--light-blue);
@@ -23,11 +31,21 @@
                   color: var(--red);
                   cursor: pointer;
             }
+
+            @include respond (small_desktop) {
+                  font-size: 3rem;
+            }
       }
 
       &__text {
             color: var(--light-grayish-blue);
             font-size: 1.5rem;
+            padding-right: 3rem;
+
+            
+            @include respond(small_desktop){
+                  font-size: 2rem;
+            }
       }
 
       &:hover &__icon {

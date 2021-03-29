@@ -1,5 +1,9 @@
 .about {
       padding-bottom:10rem;
+      
+      @include respond(small_desktop){
+            padding-bottom: 0rem;
+      }
 
       &__text {
             padding: 0 3rem;
@@ -8,17 +12,32 @@
             display: flex;
             justify-content: space-around;
             justify-items: center;
-            flex-direction: column;
-            // padding-top: 2rem;   
+            flex-direction: column;  
             padding-bottom: 5rem;
+            @include respond (small_desktop) {
+                  padding: 5rem 0rem;
+                  padding-right: 1rem;
+            }
       }
 
       &__paragraph {
             margin-top: 3rem;
+            font-size: 2rem;
+            @include respond (small_desktop) {
+                  line-height: 3rem;
+            }
+            @include respond(no_desktop) {
+                  font-size: 2.5rem;
+            }   
       }
 
       &__card-box {
             padding: 5rem 0;
+
+            @include respond (small_desktop) {
+                  padding-top: 1.5rem;
+            }
+            
       }
 }
 
@@ -38,10 +57,11 @@
                   align-items: center;
                   justify-items: flex-start;
                   transition: all 1s ease;
-            }
 
-           
-           
+                  @include respond (small_desktop) {
+                        padding-left: 0rem;
+                  }
+            }          
       }
 
       &__text {
@@ -50,6 +70,9 @@
             transition: all 1s ease;
             font-size: 1.6rem;
             font-weight: 700;
+            @include respond(no_desktop) {
+                 font-size: 2rem;
+            }
       }
 
       .fas.fa-long-arrow-alt-right {
@@ -71,4 +94,12 @@
       width: 3rem;
       height: 3rem;
       text-align: center;
+
+      @include respond(no_desktop) {
+            width: 4rem;
+            height: 4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+      }
 }

@@ -1,1 +1,70 @@
+.col-md-6--full {
 
+      @include respond(small_desktop){
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+     
+}
+
+
+.col-md-4--full {
+      
+      @include respond(small_desktop){
+            flex: 0 0 50%;
+            max-width: 50%;
+      }
+
+}
+
+.col-md-7--full {
+      @include respond(small_desktop){
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+}
+.col-md-5--full {
+      @include respond(small_desktop){
+            flex: 0 0 80%;
+            max-width: 80%;
+      }
+}
+
+.col-md-6--half {
+      @include respond (no_desktop) {
+            flex: 0 0 50%;
+            max-width: 50%;
+      }
+}
+
+.container  {
+      @media only screen and (min-width:61.875em) {
+            max-width: 720px;
+      }
+      @media only screen and (min-width:992px) {
+            max-width: 960px;
+      }
+      @media only screen and (min-width:1200px) {
+            max-width: 1140px;
+      }
+}
+
+.col-md-4--max {
+
+
+      @include respond (no_desktop) {
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+}
+
+.col-md-6--max {
+      @include respond (phone) {
+            flex: 0 0 100%;
+            max-width: 100%;
+      }
+}
+
+.container-fluid {
+      overflow-x: hidden;
+}

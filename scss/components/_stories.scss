@@ -5,6 +5,9 @@
 
       &__text {
             width: 80%;
+            @include respond (no_desktop) {
+                  width: 100%;
+            }           
       }
 
       &__image {
@@ -17,19 +20,42 @@
             font-weight: 700;
             line-height: 3.6rem;
             margin-bottom: 0;
-
+            @include respond (small_desktop) {
+                  font-size: 3rem;
+            }
+            @include respond (no_desktop) {
+                  font-size: 3.5rem;
+            }
       }
 
       &__title {
             font-size: 1.6rem;
             color: var(--blue);
             margin-bottom: 3rem;
+            @include respond (small_desktop) {
+                  font-size: 2rem;
+                  margin-top: 1rem;
+            }
+            @include respond (no_desktop) {
+                  font-size: 2.5rem;
+                  font-weight: 400;
+            }
+            
       }
 
       &__paragraph {
             font-size: 2rem;
             line-height: 3rem;
             font-weight: 400;
+            color:var(--light-grayish-blue);
+            @include respond (small_desktop) {
+                  font-size: 1.8rem;
+            }
+            @include respond (no_desktop) {
+                  font-size: 2.5rem;
+                  line-height: 3.6rem;
+                  margin-bottom: 4rem;
+            }
            
       }
 }
@@ -38,6 +64,10 @@
       position: absolute !important;
       top: 80% !important;
       left: 0% !important;
+
+      @include respond (no_desktop) {
+           display: none;
+      }
 }
 .owl-dot span {
       background-color: var(--dark-grayish-blue) !important;
