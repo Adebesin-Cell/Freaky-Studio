@@ -22,7 +22,7 @@
 
       &__paragraph {
             margin-top: 3rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
             @include respond (small_desktop) {
                   line-height: 3rem;
             }

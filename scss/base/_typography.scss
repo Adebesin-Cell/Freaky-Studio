@@ -1,6 +1,6 @@
 .header__text {
       text-align: center;
-      font-size: 2rem;
+      font-size: 1.9rem;
       font-weight: 500;
 }
 
@@ -9,6 +9,7 @@
       font-weight: 700;
       width: 100%;
       letter-spacing: .01rem;
+      line-height: 9.6rem;
       @include respond (no_desktop){
             font-size: 7rem;
       }
@@ -30,12 +31,18 @@
             margin-bottom: 2.4rem;
             width: 80%;
       }
+
+      &--About {
+            font-size: 3.6rem;
+            margin-bottom: 2.4rem;
+            line-height: 4.6rem;
+      }
    
 }
 
 .heading-secondary {
-      font-size: 3.5rem;
-      font-weight: 600;
+      font-size: 3.2rem;
+      font-weight: 700;
       &--sub {
             text-align: center;
             @include respond (phone){
@@ -53,6 +60,7 @@
                   color: var(--dark-grayish-blue);
                   line-height: 4.6rem;
                   margin-bottom: 3rem;
+                  font-size: 5rem;
             }
       }
       &--gallery {
@@ -93,4 +101,21 @@
       @include respond (small_desktop) {
             font-size: 1.8rem;
       }
+}
+
+.About__paragraph {
+      font-size: 1.7rem;
+      line-height: 2.6rem;
+      // padding-right: 2rem;
+      color: var(--light-grayish-blue);
+      font-weight: 400;
+      span{
+            font-weight: 700;
+            color: var(--light-grayish-blue);
+      }
+}
+.sub {
+      font-size: 1.7rem;
+      color: var(--light-grayish-blue);
+      line-height: 2.6rem;
 }

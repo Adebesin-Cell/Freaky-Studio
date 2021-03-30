@@ -32,6 +32,7 @@
             font-size: 1.6rem;
             color: var(--blue);
             margin-bottom: 3rem;
+            line-height: 3rem;
             @include respond (small_desktop) {
                   font-size: 2rem;
                   margin-top: 1rem;
@@ -44,7 +45,7 @@
       }
 
       &__paragraph {
-            font-size: 2rem;
+            font-size: 1.6rem;
             line-height: 3rem;
             font-weight: 400;
             color:var(--light-grayish-blue);

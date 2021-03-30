@@ -26,7 +26,7 @@ html {
 }
 
 body {
-      font-family:"Poppins", sans-serif;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       font-size: 1.6rem;
       font-weight: 400;
       color: var(--white);
@@ -37,4 +37,9 @@ body {
 ::selection {
       background-color: var(--dark-grayish-blue);
       color: var(--light-grayish-blue);
+}
+
+
+p,h1,h2,h3,h4,a {
+      font-family: "Spartan", sans-serif;
 }
