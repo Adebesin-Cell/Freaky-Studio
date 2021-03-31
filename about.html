@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="assets/assets/owl.carousel.css">
       <link rel="stylesheet" href="assets/assets/owl.theme.default.css">
       <link rel="stylesheet" href="assets/css/lightbox.css">
+      <link rel="stylesheet" href="assets/css/jquery.roadmap.min.css">
       <link rel="stylesheet" href="css/style.css">
       <link rel="shortcut icon" href="favicon.ico">
 </head>
@@ -36,7 +37,7 @@
                                     <span class="fas fa-bars"></span>
                               </div>
 
-                              <ul class="header__navigation" id="nav">
+                              <ul class="header__navigation header__navigation--none" id="nav">
                                     <li class="header__list">
                                           <a href="index.html" class="header__link">Home</a>
                                     </li>
@@ -78,7 +79,7 @@
                         </div>
 
                         <div class="row u-mt-sm About__me">
-                              <div class="col-md-8">
+                              <div class="col-md-8 md-u-mt-sm">
                                     <h1 class="heading-primary heading-primary--About">
                                           About Me
                                           <span class="header__dot">
@@ -122,8 +123,6 @@
                                                       <use xlink:href = "images/sprite.svg#github"></use>
                                                 </svg>
                                           </a>
-                                         
-
                                     </div>
                               </div>
                               <div class="col-md-4">
@@ -147,29 +146,209 @@
                   </div>
             </section>
             <section class="row section-work-process">
-                  <div class="container">
+                  <div class="container u-p-md">
                         <h1 class="heading-primary heading-primary--About">
                               My work process
                               <span class="header__dot">
                                     <i class ="fas fa-circle"></i>
                               </span>
                         </h1>
-                        <div class="row">
-                              <div class="col-md-3">
-                                    &nbsp;
+                        <div class="row u-mt-sm u-mb-md">
+                              <div class="col-md-3 col-md-3--half">
+                                    <div class="card card__work-process card__work-process--1">
+                                          <div class="card__icon-box">
+                                                <svg class="work-process__icon">
+                                                      <use xlink:href = "images/sprite.svg#magic"></use>
+                                                </svg>
+                                          </div>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">
+                                                      Brainstorm
+                                                </h2>
+                                                <p class = "card__text card__text--work-process">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
                               </div>
-                              <div class="col-md-3">
-                                    &nbsp;
+                              <div class="col-md-3 col-md-3--half">
+                                    <div class="card card__work-process card__work-process--2">
+                                          <div class="card__icon-box">
+                                                <svg class="work-process__icon">
+                                                      <use xlink:href = "images/sprite.svg#umbrella"></use>
+                                                </svg>
+                                          </div>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">
+                                                      Design
+                                                </h2>
+                                                <p class = "card__text card__text--work-process">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
                               </div>
-                              <div class="col-md-3">
-                                    &nbsp;
+                              <div class="col-md-3 col-md-3--half">
+                                    <div class="card card__work-process card__work-process--3">
+                                          <div class="card__icon-box">
+                                                <svg class="work-process__icon">
+                                                      <use xlink:href = "images/sprite.svg#edit"></use>
+                                                </svg>
+                                          </div>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">Product testing</h2>
+                                                <p class = "card__text card__text--work-process">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
                               </div>
-                              <div class="col-md-3">
-                                    &nbsp;
+                              <div class="col-md-3 col-md-3--half">
+                                    <div class="card card__work-process card__work-process--4">
+                                          <div class="card__icon-box">
+                                                <svg class="work-process__icon">
+                                                      <use xlink:href = "images/sprite.svg#laptop"></use>
+                                                </svg>
+                                          </div>
+                                          <div class="card__details">
+                                                <h2 class = "card__header">Fully Responsive</h2>
+                                                <p class = "card__text card__text--work-process">
+                                                      Lorem ipsum dolor sit amet,Ea consequuntur illum facere.
+                                                </p>
+                                          </div>
+                                    </div>
                               </div>
                         </div>
                   </div>
+                  <div class="row image-grid">
+                        <div class="About-image-box col-md-4--full image-box--1">
+                              <img src="images/g5.jpg" alt="Ge 5" class="img-fluid image-img">
+                        </div>
+                        <div class="About-image-box col-md-4--full image-box--2">
+                              <h1 class="heading-primary heading-primary--About">
+                                    Motivated By The Desire To Achieve
+                                    <span class="header__dot header__dot--black">
+                                          <i class ="fas fa-circle"></i>
+                                    </span>
+                              </h1>
+                        </div>
+                        <div class="About-image-box col-md-4--full image-box--3">
+                              <img src="images/g3.jpg" alt="Ge 5" class="img-fluid image-img">
+                        </div>
+                  </div>
             </section>
+            <section class="section-timeline row">
+                  <div class="container u-p-md">
+                        <h1 class="heading-primary heading-primary--About">
+                              Jobs & Experience
+                              <span class="header__dot">
+                                    <i class ="fas fa-circle"></i>
+                              </span>
+                        </h1>
+                        <!-- Timeline structure -->
+                        <!-- <div class="timeline"> -->
+                              <!-- <div class="container left"> -->
+                                <!-- <div class="content"> -->
+                                  <!-- <h2>2017</h2> -->
+                                  <!-- <p>Lorem ipsum..</p> -->
+                                <!-- </div> -->
+                              <!-- </div> -->
+                              <!-- <div class="container right"> -->
+                                <!-- <div class="content"> -->
+                                  <!-- <h2>2016</h2> -->
+                                  <!-- <p>Lorem ipsum..</p> -->
+                                <!-- </div> -->
+                              <!-- </div> -->
+                        <!-- </div> -->
+                  </div>
+            </section>
+            <section class="row section-contact">
+                  <div class="contact">
+                        <div class="container u-py-md-2">
+                              <h1 class="contact__header">
+                                    Do you like my work
+                                    <span class="header__dot">
+                                          <i class ="fas fa-circle"></i>
+                                    </span>
+                                    ?
+                              </h1>
+      
+                              <h3 class="contact__sub-header">
+                                    Let's work together!
+                              </h3>
+                              <div class="contact__cta">
+                                    <a href="contact.html" class="cta__btn">
+                                          <span class="icon__box">
+                                                <i class="fas fa-long-arrow-alt-right"></i>
+                                          </span>                                                      
+                                         <span class="cta__text">
+                                                Get in touch
+                                          </span>
+                                    </a>
+                              </div>
+      
+                        </div>
+
+                  </div>
+                  
+            </section>
+
+            <footer class="footer container">
+                  <div class="row footer__content">
+                        <div class="col-md-6 col-md-6--full footer__texts">
+                             <p class="footer__paragraph">
+                                   &copy; 2021 Freaky. Made with 
+                                   <span>
+                                          <svg class="love">
+                                                <use xlink:href = "images/sprite.svg#heart-solid"></use>
+                                          </svg>
+                                   </span>
+                                    love. Design by 
+                                    <span class="name">
+                                          Tolulope
+                                    </span>
+                             </p>
+                        </div>
+                        <div class="col-md-6  col-md-6--full footer__cta-box">
+                              <div class="footer__cta">
+                                    <ul class="footer__navigation">
+                                          <li class="footer__item">
+                                                <a href="#" class="footer__link">Terms</a>
+                                          </li>
+                                          <li class="footer__item">
+                                                <a href="#" class="footer__link">Support</a>
+                                          </li>
+                                          <li class="footer__item">
+                                                <a href="#" class="footer__link">Privacy</a>
+                                          </li>
+                                          <li class="footer__item">
+                                                <a href="contact.html" class="footer__link">Contact</a>
+                                          </li>
+                                    </ul>
+
+                                    <div class="footer__social-icon-box">
+                                          <a href="#" class="footer__icon">
+                                                <svg class="footer__social-icon">
+                                                      <use xlink:href="images/sprite.svg#facebook"></use>
+                                                </svg>
+                                          </a>
+                                          
+                                          <a href="#" class="footer__icon">
+                                                <svg class="footer__social-icon">
+                                                      <use xlink:href="images/sprite.svg#twitter"></use>
+                                                </svg>
+                                          </a>
+                                          <a href="#" class="footer__icon">
+                                                <svg class="footer__social-icon">
+                                                      <use xlink:href="images/sprite.svg#linkedin"></use>
+                                                </svg>
+                                          </a>
+                                    </div>
+                              </div>
+                              
+                        </div>
+                  </div>
+            </footer>
       </div>
       <script src="assets/Js/jquery-3.5.1.js"></script>
       <script src="assets/Js/typed.js"></script>
@@ -179,7 +358,36 @@
       <script src="assets/Js/lightbox-plus-jquery.min.map"></script>
       <script src="assets/Js/lightbox.js"></script>
       <script src="assets/Js/lightbox.min.map"></script>
+      <script src="assets/Js/jquery.roadmap.min.js"></script>
       <script src="assets/owl.carousel.js"></script>
       <script src="Js/App.js"></script>
+
+      <script>
+            var myEvents = [{
+                        date: '2020 - present',
+                        content: 'Lorem ipsum dolor sit amet'
+                  },
+                  {
+                        date: 'Q2 - 2017',
+                        content: 'Lorem ipsum dolor sit amet'
+                  },
+                  {
+                        date: 'Q3 - 2017',
+                        content: 'Lorem ipsum dolor sit amet'
+                  },
+                  {
+                        date: 'Q3 - 2018',
+                        content: 'Lorem ipsum dolor sit amet'
+                  },
+                  {
+                        date: 'Q3 - 2018',
+                        content: 'Lorem ipsum dolor sit amet'
+                  }
+            ];
+
+            $('#my-timeline').roadmap(myEvents, {
+                  orientation: "vertical"
+            });
+      </script>
 </body>
 </html>

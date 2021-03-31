@@ -42,14 +42,44 @@
             font-size: 1.5rem;
             padding-right: 3rem;
             line-height: 2.6rem;
-
-            
+               
             @include respond(small_desktop){
                   font-size: 2rem;
             }
+
+            &--work-process {
+                  padding-right: 0rem;
+            }
+
+         
       }
 
       &:hover &__icon {
             color: var(--blue);
       }
+
+     
+
+      &__work-process {
+            background-color: var(--icon-bg-color);
+
+            &--4,&--3 {
+                  @include respond(small_desktop) {
+                        margin-top: 3rem;
+                  }
+            }
+      }
+      
+      &:hover .work-process__icon {
+            color: var(--blue);
+      }
+}
+
+
+.work-process__icon {
+      width: 4.5rem;
+      height: 4.5rem;
+      color: var(--red);
+      transition: all .5s ease;
+
 }

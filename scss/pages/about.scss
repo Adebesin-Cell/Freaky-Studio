@@ -9,6 +9,7 @@
                   align-items: center;
                   padding-top: 2rem;
                   padding-bottom: 2rem;
+                  flex-wrap: wrap;
             }
       }
 
@@ -30,6 +31,7 @@
             justify-content: flex-start;
             align-items: center;
             margin-top: 2rem;
+          
       }
 
       &__info-icon-box a {
@@ -56,7 +58,6 @@
 }
 .breaddy {
       background-color: #e9ecef;
-      // width: 100%;
       padding: 0 1rem;
 }
 
@@ -97,5 +98,11 @@
 .section-work-process {
       padding: 5rem 0rem;
       color: var(--dark-grayish-blue);
-      background-color: var(--light-blue);
+      background-color: var( --icon-bg-color);
+      padding-bottom: 0rem;
+}
+
+.section-timeline {
+      padding: 5rem 0;
+      color: var(--dark-grayish-blue);
 }

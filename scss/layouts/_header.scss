@@ -9,7 +9,6 @@
 
       &__main {
             margin-top: 2.1rem;
-
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -27,6 +26,8 @@
 
             list-style-type: none;
 
+           
+
                   
             @include respond (no_desktop) {
                   flex-basis: 100%;
@@ -37,6 +38,13 @@
                   opacity: 0;
                   visibility: hidden;
                   transition: all .5s ease;
+                  border-radius: 6px;
+                  border: 1px solid #3c2f26;
+            }
+            &--none {
+                  @include respond (no_desktop) {
+                        display: none;
+                  }
             }
 
             &__toggle {
@@ -55,7 +63,6 @@
                         width: 5rem;
                         height: 5rem;
                         text-align: center;
-                        // flex-basis: 50%;
                       
                   }
             }
@@ -98,6 +105,15 @@
             &:not(:last-child) {
                   margin-right: 1rem;
             }
+            &:first-child {
+                  border-top-left-radius: 6px;
+                  border-top-right-radius: 6px;
+            }
+
+            &:last-child {
+                  border-bottom-left-radius: 6px;
+                  border-bottom-right-radius: 6px;
+            }
         
           }
           &__list::before {
@@ -118,6 +134,14 @@
           &__list.active::before {
             transform: scaleY(1);
             height: 100%;
+            &:first-child {
+                  border-top-left-radius: 6px;
+                  border-top-right-radius: 6px;
+            }
+            &:last-child {
+                  border-bottom-left-radius: 6px;
+                  border-bottom-right-radius: 6px;
+            }
           }
 
           &__list:hover &__link {
@@ -163,6 +187,10 @@
       &__dot {
             font-size: .5rem;
             color: var(--red);
+
+            &--black {
+                  color: var(--dark-grayish-blue);
+            }
       }
 
 
@@ -227,5 +255,5 @@
 .open {
       opacity: 1;
       visibility: visible;
-      // animation: moveDown ;
+      display: flex;
 }

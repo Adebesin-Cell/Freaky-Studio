@@ -48,3 +48,11 @@
 .u-p-md {
       padding: 5rem 2rem;
 }
+.u-mb-md {
+      margin-bottom: 5rem;
+}
+.md-u-mt-sm {
+      @include respond (no_desktop) {
+            margin-bottom: 5rem;
+      }
+}
