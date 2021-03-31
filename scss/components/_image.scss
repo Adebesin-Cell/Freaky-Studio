@@ -22,6 +22,7 @@
 }
 .image-grid {
       width: 100%;
+      align-items:center;
 }
 
 .image-box--2 {
@@ -36,6 +37,12 @@
       justify-items: center;
 
       padding: 0 3rem;
+      height: 60rem;
+
+      @include respond (phone) {
+            padding: 3rem;
+            height: initial;
+      }
 }
 .image-img {
       object-fit: cover;

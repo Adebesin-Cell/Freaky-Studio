@@ -1,0 +1,25 @@
+.button {
+      display: inline-block;
+      outline: none;
+      border: 1px solid #4f9da6;
+      font-family: inherit;
+      font-size: 1.6rem;
+      background-color: #4f9da6;
+      padding: 1.2rem 3.5rem;
+      border-radius: 6px;
+      color: var(--white);
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: all .5s ease;
+
+      &:hover {
+            border: 1px solid var(--red);
+            background-color: var(--red);
+      }
+}
+
+.button-box {
+      margin-top: 2.4rem;
+      text-align: right;
+      width: 100%;
+}

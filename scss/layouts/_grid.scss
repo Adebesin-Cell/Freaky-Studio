@@ -63,6 +63,13 @@
             flex: 0 0 100%;
             max-width: 100%;
       }
+
+      &--lg {
+            @include respond (phone) {
+                  flex: 0 0 100%;
+                  max-width: 100%;
+            }
+      }
 }
 
 .col-md-6--max {
@@ -74,4 +81,12 @@
 
 .container-fluid {
       overflow-x: hidden;
+}
+
+.col-md-3--full {
+
+      @include respond (no_desktop) {
+            flex:0 0 100%;
+            max-width: 100%;
+      }
 }

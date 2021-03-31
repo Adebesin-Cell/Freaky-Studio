@@ -58,8 +58,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
-  color: var(--white);
-  overflow-x: hidden; }
+  color: var(--white); }
 
 ::selection {
   background-color: var(--light-grayish-blue);
@@ -102,6 +101,9 @@ p, h1, h2, h3, h4, a {
     font-size: 3.6rem;
     margin-bottom: 2.4rem;
     line-height: 4.6rem; }
+  .heading-primary--contact-form {
+    text-align: center;
+    margin-bottom: 0rem; }
 
 .heading-secondary {
   font-size: 3.2rem;
@@ -134,6 +136,10 @@ p, h1, h2, h3, h4, a {
         letter-spacing: initial; } }
   .heading-secondary--blog {
     margin-bottom: 3rem; }
+  .heading-secondary--timeline {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem; }
 
 .paragraph {
   color: var(--light-grayish-blue);
@@ -168,6 +174,9 @@ p, h1, h2, h3, h4, a {
   font-size: 1.7rem;
   color: var(--light-grayish-blue);
   line-height: 2.6rem; }
+  .sub--contact-form {
+    text-align: center;
+    margin-bottom: 3rem; }
 
 .u-py-sm {
   padding: 2rem 0rem; }
@@ -213,6 +222,28 @@ p, h1, h2, h3, h4, a {
 @media only screen and (max-width: 47.9375em) {
   .md-u-mt-sm {
     margin-bottom: 5rem; } }
+
+.button {
+  display: inline-block;
+  outline: none;
+  border: 1px solid #4f9da6;
+  font-family: inherit;
+  font-size: 1.6rem;
+  background-color: #4f9da6;
+  padding: 1.2rem 3.5rem;
+  border-radius: 6px;
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all .5s ease; }
+  .button:hover {
+    border: 1px solid var(--red);
+    background-color: var(--red); }
+
+.button-box {
+  margin-top: 2.4rem;
+  text-align: right;
+  width: 100%; }
 
 .card {
   border: none;
@@ -282,7 +313,8 @@ p, h1, h2, h3, h4, a {
   max-width: 33.333333%; }
 
 .image-grid {
-  width: 100%; }
+  width: 100%;
+  align-items: center; }
 
 .image-box--2 {
   background-color: var(--blue);
@@ -293,7 +325,12 @@ p, h1, h2, h3, h4, a {
   justify-content: center;
   align-items: center;
   justify-items: center;
-  padding: 0 3rem; }
+  padding: 0 3rem;
+  height: 60rem; }
+  @media only screen and (max-width: 37.5em) {
+    .image-box--2 {
+      padding: 3rem;
+      height: initial; } }
 
 .image-img {
   object-fit: cover; }
@@ -507,6 +544,9 @@ p, h1, h2, h3, h4, a {
     text-transform: capitalize;
     margin-bottom: 2.4rem;
     font-weight: 700; }
+    @media only screen and (max-width: 37.5em) {
+      .contact__header {
+        font-size: 2.6rem; } }
   .contact__cta {
     display: flex;
     justify-content: center;
@@ -521,6 +561,180 @@ p, h1, h2, h3, h4, a {
         font-size: 2.6rem; } }
   .contact .icon__box {
     color: var(--dark-grayish-blue); }
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  margin: 0 auto; }
+  .timeline__title {
+    background-color: var(--blue);
+    color: var(--white);
+    padding: 1rem 1rem;
+    width: 50%;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2.4rem; }
+    @media only screen and (max-width: 61.875em) {
+      .timeline__title {
+        width: 70%; } }
+    @media only screen and (max-width: 47.9375em) {
+      .timeline__title {
+        width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .timeline__title {
+        margin: 0 auto;
+        margin-bottom: 2.4rem; } }
+    .timeline__title--2, .timeline__title--4 {
+      margin-left: 23.25rem; }
+      @media only screen and (min-width: 1200px) {
+        .timeline__title--2, .timeline__title--4 {
+          margin-left: 25rem; } }
+      @media only screen and (max-width: 1200px) and (min-width: 1030px) {
+        .timeline__title--2, .timeline__title--4 {
+          margin-left: 23.5rem; } }
+      @media only screen and (max-width: 61.875em) {
+        .timeline__title--2, .timeline__title--4 {
+          margin-left: 11.25rem; } }
+      @media only screen and (max-width: 47.9375em) {
+        .timeline__title--2, .timeline__title--4 {
+          margin-left: 7.5rem; } }
+      @media only screen and (max-width: 37.5em) {
+        .timeline__title--2, .timeline__title--4 {
+          margin: 0 auto;
+          margin-bottom: 2.4rem; } }
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: var(--dark-grayish-blue);
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px; }
+
+/* Container around content */
+.container--1 {
+  padding: 1rem 4rem;
+  position: relative;
+  background-color: inherit;
+  width: 50%; }
+
+@media only screen and (max-width: 37.5em) {
+  .container--1:first-child::after {
+    top: 3rem; } }
+
+/* The circles on the timeline */
+.container--1::after {
+  content: '';
+  position: absolute;
+  width: 2.5rem;
+  height: 2.5rem;
+  right: -1.2rem;
+  background-color: whitesmoke;
+  border: 4px solid #FF9F55;
+  top: 1.5rem;
+  border-radius: 50%;
+  z-index: 1; }
+  @media only screen and (max-width: 37.5em) {
+    .container--1::after {
+      top: -4.6rem; } }
+
+/* Place the container to the left */
+.left {
+  left: 0;
+  text-align: right; }
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+  text-align: left; }
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 2.2rem;
+  width: 0;
+  z-index: 1;
+  right: 3rem;
+  border: medium solid var(--blue);
+  border-width: 1rem 0 1rem 1rem;
+  border-color: transparent transparent transparent var(--blue); }
+  @media only screen and (max-width: 37.5em) {
+    .left::before {
+      display: none; } }
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 2.2rem;
+  width: 0;
+  z-index: 1;
+  left: 3rem;
+  border: medium solid var(--blue);
+  border-width: 1rem 1rem 1rem 0;
+  border-color: transparent var(--blue) transparent transparent; }
+  @media only screen and (max-width: 37.5em) {
+    .right::before {
+      display: none; } }
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -13px; }
+
+/* The actual content */
+.content {
+  padding: 2rem 3rem;
+  color: var(--light-grayish-blue);
+  position: relative;
+  border-radius: 6px;
+  padding-left: 0;
+  top: -2rem; }
+  @media only screen and (max-width: 37.5em) {
+    .content--1 {
+      margin-top: 8rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .content {
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+      background-color: whitesmoke;
+      text-align: center;
+      margin-bottom: 5rem; } }
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 50%;
+    z-index: -1; }
+  /* Full-width containers */
+  .container--1 {
+    width: 100%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem; }
+  /* Make sure that all arrows are pointing leftwards */
+  .container--1::before {
+    left: 6rem;
+    border: medium solid white;
+    border-width: 1rem 1rem 1rem 0;
+    border-color: transparent white transparent transparent; }
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 48%; }
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%; } }
+
+@media only screen and (max-width: 500px) {
+  .left::after, .right::after {
+    left: 50%;
+    transform: translate(-50%, -50%); } }
 
 .about {
   padding-bottom: 10rem; }
@@ -738,12 +952,22 @@ p, h1, h2, h3, h4, a {
     max-width: 100%; } }
 
 @media only screen and (max-width: 37.5em) {
+  .col-md-4--max--lg {
+    flex: 0 0 100%;
+    max-width: 100%; } }
+
+@media only screen and (max-width: 37.5em) {
   .col-md-6--max {
     flex: 0 0 100%;
     max-width: 100%; } }
 
 .container-fluid {
   overflow-x: hidden; }
+
+@media only screen and (max-width: 47.9375em) {
+  .col-md-3--full {
+    flex: 0 0 100%;
+    max-width: 100%; } }
 
 .header {
   background-image: url(/images/hero.jpg);
@@ -775,12 +999,14 @@ p, h1, h2, h3, h4, a {
         background-color: var(--black);
         text-align: center;
         opacity: 0;
+        height: 0;
         visibility: hidden;
         transition: all .5s ease;
         border-radius: 6px;
         border: 1px solid #3c2f26; } }
     @media only screen and (max-width: 47.9375em) {
       .header__navigation--none {
+        transition: all .5s ease;
         display: none; } }
     .header__navigation__toggle {
       display: none; }
@@ -796,7 +1022,8 @@ p, h1, h2, h3, h4, a {
           border-radius: 6px;
           width: 5rem;
           height: 5rem;
-          text-align: center; } }
+          text-align: center;
+          transition: all .5s ease; } }
   .header__link, .header__link:link, .header__link:visited {
     display: inline-block;
     text-decoration: none;
@@ -915,7 +1142,9 @@ p, h1, h2, h3, h4, a {
 .open {
   opacity: 1;
   visibility: visible;
-  display: flex; }
+  display: flex;
+  min-height: 20rem;
+  transition: all .5s ease; }
 
 .section-about {
   padding-top: 15rem;
@@ -1017,9 +1246,6 @@ p, h1, h2, h3, h4, a {
   justify-content: flex-start;
   align-items: center;
   margin-top: 2rem; }
-  @media only screen and (max-width: 47.9375em) {
-    .About__info-icon-box {
-      margin-bottom: 5rem; } }
 
 .About__info-icon-box a {
   display: inline-block;
@@ -1079,3 +1305,96 @@ p, h1, h2, h3, h4, a {
 .section-timeline {
   padding: 5rem 0;
   color: var(--dark-grayish-blue); }
+
+.section-contact-form {
+  padding: 5rem 0;
+  color: var(--dark-grayish-blue); }
+
+.form {
+  width: 80%;
+  margin: 0 auto; }
+
+label {
+  display: none; }
+
+.my-form {
+  margin-bottom: 3rem;
+  font-size: 1.6rem;
+  color: var(--light-grayish-blue);
+  font-family: inherit;
+  border-radius: 6px;
+  height: 5rem;
+  border: 1px solid #DEE5ED;
+  outline: none;
+  padding: 1rem 1.5rem;
+  line-height: 2.6rem;
+  transition: all .5s ease;
+  background-color: var(--white); }
+  .my-form:focus {
+    outline: none;
+    border: 1px solid #4f9da6;
+    box-shadow: none; }
+
+.textarea {
+  height: 13rem;
+  border-radius: 6px;
+  width: 100%;
+  display: block;
+  outline: none;
+  border: 1px solid #DEE5ED;
+  background-color: var(--white);
+  overflow: auto;
+  resize: none;
+  margin-bottom: 2.4rem;
+  padding: 1rem 1.5rem;
+  transition: all .5s ease; }
+  .textarea:focus {
+    outline: none;
+    border: 1px solid #4f9da6;
+    box-shadow: none; }
+
+::-webkit-input-placeholder {
+  color: var(--light-grayish-blue);
+  font-size: 1.6rem;
+  font-family: inherit; }
+
+.contact-info {
+  width: 70%;
+  margin: 0 auto;
+  border-top: 1px solid #ddd;
+  padding-bottom: 5rem;
+  margin-bottom: 6rem; }
+  @media only screen and (max-width: 75em) {
+    .contact-info {
+      width: 100%; } }
+
+.contact__list {
+  list-style-type: none;
+  display: flex;
+  margin-top: 6rem;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 47.9375em) {
+    .contact__list {
+      flex-direction: column; } }
+
+.contact__item {
+  color: var(--red);
+  font-size: 1.6rem;
+  margin-right: 2.4rem; }
+  @media only screen and (max-width: 47.9375em) {
+    .contact__item {
+      margin-bottom: 2.4rem; } }
+  .contact__item:last-child {
+    margin-right: 0; }
+
+.contact__link, .contact__link:link, .contact__link:visited {
+  padding: 1rem 2rem;
+  color: var(--dark-grayish-blue);
+  text-decoration: none; }
+
+.map {
+  width: 100%;
+  min-height: 40rem;
+  border: none;
+  display: block; }
