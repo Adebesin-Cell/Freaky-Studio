@@ -6,12 +6,7 @@
   "scripts": {
     "watch": "node-sass -w scss/main.scss css/style.css",
     "server": "live-server",
-    "start": "npm-run-all --parallel watch server",
-    "compile": "node-sass -o css/style.comp.css scss/main.scss",
-    "concat": "concat -o css/style.concat.css assets/css/aos.css assets/css/bootstrap.css assets/css/owl.carousel.css assets/css/owl.theme.default.css css/style.comp.css",
-    "prefix": "postcss --use autoprefixer -o css/style.prefix.css css/style.concat.css",
-    "compress": "node-sass ",
-    "build": "npm-run-all prefix concat compile compress"
+    "start": "npm-run-all --parallel watch server"
   },
   "repository": {
     "type": "git",
