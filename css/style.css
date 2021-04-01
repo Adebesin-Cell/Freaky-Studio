@@ -434,6 +434,10 @@ img {
 .nav-pills .nav-item a.active {
   color: var(--red) !important; }
 
+.nav-pills .nav-item.active.bg-none.bg.bg--bg--1 {
+  color: var(--dark-grayish-blue) !important;
+  background: none !important; }
+
 .nav-pills .nav-item a.active:first-of-type {
   color: var(--dark-grayish-blue) !important; }
 
@@ -502,7 +506,7 @@ img {
 
 .nav-pills .nav-item a.active.bg-none.bg.bg--bg {
   background: none !important;
-  color: var(--dark-grayish-blue); }
+  color: var(--dark-grayish-blue) !important; }
 
 .my-link {
   padding: 1.5rem 5rem;
