@@ -25,7 +25,19 @@
       }
 }
 .nav-pills .nav-item a.active{
-	color: var(--red);
+	color: var(--red) !important;
+}
+
+
+.nav-pills .nav-item a.active:first-of-type {
+      color: var(--dark-grayish-blue) !important;
+
+      
+}
+.nav-pills .nav-item a.active:last-of-type {
+      color: var(--white) !important;
+      background: var(--red) !important;
+      border-radius: 6px;
 }
 
 .nav-item:hover .nav-link {
@@ -50,6 +62,10 @@
             margin-right: 1.5rem;
             @include respond (small_desktop) {
                   top: 1.8rem;
+            }
+
+            @media only screen and (max-width:400px) {
+                  top: 1.2rem;
             }
       }
 }
@@ -97,4 +113,14 @@
             opacity: 1;
             visibility: visible;
       }
+}
+
+.nav-pills .nav-item a.active.bg-none.bg.bg--bg {
+      background: none !important;
+      color: var(--dark-grayish-blue);
+}
+
+.my-link {
+      padding: 1.5rem 5rem;
+      padding-top: 2rem;
 }

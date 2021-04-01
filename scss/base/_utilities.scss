@@ -49,10 +49,17 @@
       padding: 5rem 2rem;
 }
 .u-mb-md {
-      margin-bottom: 5rem;
+      margin-bottom: 5rem !important;
 }
 .md-u-mt-sm {
       @include respond (no_desktop) {
             margin-bottom: 5rem;
+      }
+}
+
+.sm-u-mt-sm {
+
+      @include respond (small_desktop) {
+            margin-top: 3rem;
       }
 }

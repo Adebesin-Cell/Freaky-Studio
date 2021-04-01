@@ -1,0 +1,91 @@
+
+.section-services {
+      padding: 5rem 0;
+      color: var(--dark-grayish-blue);
+}
+
+
+.what-I-do {
+      width: 100%;
+      background-image: url(/images/services.jpg);
+      background-position: top;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      z-index: 0;
+      padding: 5rem 0;
+
+      &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background: rgba(6, 14, 21, 0.55);
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+      }
+}
+
+.section-pricing-plan {
+      padding: 5rem 0;
+      color: var(--dark-grayish-blue);
+}
+
+.section-count {
+      &__layer {
+            width: 100%;
+            background-image: url(/images/clients.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            position: relative;
+            background-size: cover;
+            padding: 5rem 0;
+            z-index: 0;
+
+            &::after {
+                  content: "";
+                  top: 0;
+                  width:100%;
+                  height: 100%;
+                  left: 0;
+                  position: absolute;
+                  background-image: url(/images/dots.png);
+                  z-index: -1;
+            }
+
+      }
+
+      &__card {
+            background-color: var(--white);
+            border-radius: 6px;
+            padding: 4rem 2rem;
+            display: flex;
+
+            &--left {
+                  flex: 0 0 25%;
+                  color: var(--red);
+                  font-size: 3rem;
+
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+            }
+
+            &--right {
+                  flex: 0 0 75%;
+                
+            }
+
+            &__title {
+                  font-size: 3.6rem;
+                  font-weight: 700;
+                  color: var(--blue);
+            }
+
+            &__paragraph {
+                  color: var(--light-grayish-blue);
+            }
+      }
+
+}

@@ -14,6 +14,11 @@
             font-size: 5rem;
             color: var(--light-blue);
             transition: all .5s ease;
+
+            &--red {
+                  color: var(--red);
+                  transition: all .5s ease;
+            }
       }
 
       &__details {
@@ -34,6 +39,11 @@
 
             @include respond (small_desktop) {
                   font-size: 3rem;
+            }
+            &--blue {
+                  &:hover {
+                        color: var(--blue);
+                  }
             }
       }
 
@@ -72,6 +82,97 @@
       
       &:hover .work-process__icon {
             color: var(--blue);
+      }
+
+      &:hover .card__icon--red {
+            color: var(--blue);
+      }
+
+      &--services {
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            text-align: center;
+            transition: all .5s ease;
+            min-height: 50rem;
+
+            &:hover {
+                  background-color: #eff6f7;
+            }
+            &:hover .card__price--lg {
+                  color: var(--red);
+            }
+
+            &.active {
+                  background-color: #eff6f7;
+                  
+
+                  & .card__price--lg {
+                        color: var(--red);
+                  }
+
+
+            }
+      }
+      &-body {
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+      }
+
+      &__info {
+            list-style-type: none;
+      }
+
+      &__info-title {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            font-weight: 700;
+            color: var(--blue);
+            margin-bottom: 1rem;
+      }
+
+      &__price {
+            font-size: 2.4rem;
+            display: inline-block;
+            color: #5E6271;
+            font-weight: 300;
+            
+
+            span {
+                  vertical-align: top;
+            }
+           
+            &--lg {
+
+                  font-size: 4.8rem;
+                  font-weight: 700;
+                  color: var(--dark-grayish-blue);
+                  transition: all .5s ease;
+            }
+      }
+
+      &__item {
+            font-size: 1.8rem;
+            line-height: 3.6rem;
+            color: var(--light-grayish-blue);
+      }
+
+      &__read-more {
+            margin-top: 3rem;
+      }
+      &__link {
+
+            &,
+            &:link,
+            &:visited
+             {
+                  text-decoration: none;
+                  color: var(--red);
+                  font-weight: 700;
+                  display: inline-block;
+                  font-size: 1.6rem;
+            }
       }
 }
 

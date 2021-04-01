@@ -17,7 +17,7 @@
             font-size: 6rem;
       }
       @media only screen and (max-width:400px) {
-            font-size: 5rem;
+            font-size: 4rem;
       }
       &--center {
             text-align: center;
@@ -30,6 +30,10 @@
             text-transform: capitalize;
             margin-bottom: 2.4rem;
             width: 80%;
+
+            @include respond (phone) {
+                 width: 100%;
+            }
       }
 
       &--About {
@@ -54,7 +58,7 @@
                   font-size: 3rem;
             }
             @media only screen and (max-width:400px) {
-                  font-size: 2.5rem;
+                  font-size: 2rem;
             }
       }
       &--about {
@@ -78,6 +82,9 @@
             @include respond (small_desktop) {
                   letter-spacing: initial;
             }
+            @include respond (phone) {
+                  font-size: 3.5rem;
+             }
       }
       &--blog {
             margin-bottom: 3rem;

@@ -16,6 +16,9 @@
             border: 1px solid var(--red);
             background-color: var(--red);
       }
+      @include respond (no_desktop) {
+            width: 100%;
+      }
 }
 
 .button-box {

@@ -7,6 +7,14 @@
       position: relative;
       z-index: 9999999999;
 
+      @include respond (no_desktop) {
+            height: 120vh;
+      }
+
+     /*  @media only screen and (max-width: 500px) {
+            height: 150vh;
+      } */
+
       &__main {
             margin-top: 2.1rem;
             display: flex;
@@ -206,9 +214,17 @@
 
       &__title {
             position: absolute;
-            top: 65%;
+            top: 63%;
             left: 50%;
             transform: translate(-50%, -50%);
+
+            @include respond (no_desktop) {
+                 top: 70%;
+            }
+
+            @media only screen and (max-width: 500px ) {
+                  top: 60%;
+            }
       }
 
 }
@@ -217,6 +233,9 @@
       color: var(--yellow);
       font-size: 3.2rem;
       font-weight: 400;
+      @media only screen and (max-width: 500px )     {
+            font-size: 2rem;
+      }
 }
 
 
