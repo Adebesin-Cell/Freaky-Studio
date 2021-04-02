@@ -51,7 +51,10 @@
 }
 
 // move the movetop to a component and name it top.scss
-
+.top {
+      position: relative;
+      display: none;
+}
 .movetop {
       &,
       &:link,
@@ -70,6 +73,7 @@
             align-items: center;
             justify-items: center;
             text-decoration: none;
+           
             
             @include respond (no_desktop) {
                   font-size: 3rem;
@@ -77,7 +81,7 @@
                   height: 4rem;
             }
             @include respond (phone) {
-                  right: 4rem;
+                  right: 2rem;
             }
       }
       

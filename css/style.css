@@ -1257,6 +1257,10 @@ img {
     .section-blog {
       padding: 0rem 3rem; } }
 
+.top {
+  position: relative;
+  display: none; }
+
 .movetop, .movetop:link, .movetop:visited {
   position: fixed;
   right: 2rem;
@@ -1279,7 +1283,7 @@ img {
       height: 4rem; } }
   @media only screen and (max-width: 37.5em) {
     .movetop, .movetop:link, .movetop:visited {
-      right: 4rem; } }
+      right: 2rem; } }
 
 .movetop:hover {
   text-decoration: none;
