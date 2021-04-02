@@ -117,6 +117,10 @@
 
             &:not(:last-child) {
                   margin-right: 1rem;
+
+                  @include respond (no_desktop) {
+                        margin-right: 0rem;
+                  }
             }
 
             &:first-child {
@@ -263,8 +267,9 @@
       background-color: var(--red);
 
       position: absolute;
-      top: 2px;
-      left: 10px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
 
       animation: wheel 1s ease infinite;
 
@@ -286,6 +291,6 @@
       opacity: 1;
       visibility: visible;
       display: flex;
-      min-height: 20rem;
+      min-height: 19rem;
       transition: all .5s ease;
 }
